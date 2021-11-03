@@ -8,7 +8,9 @@ Install the 'Minesweeper.apk' Or import the project into Android-Studio using Fi
 ### Features
 1. Different Levels - Easy,Medium,Hard 
 2. Custom Board - Custom Height, Width, Mines
-3. Try again button on Results Page
+3. High score and last game time
+4. custom board has error listener to avoid appropriate number of mines.
+5. Try again button on Results Page
 and many more
 
 #### Upcoming Features
@@ -17,6 +19,6 @@ and many more
 3. Animations
 and many more
 
-#####Demo
+### Demo
 ![Alt Text](demo.gif)
 
