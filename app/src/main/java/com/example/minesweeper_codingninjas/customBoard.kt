@@ -82,12 +82,16 @@ class customBoard : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                mines.error = if (mines.text.toString().toInt() < (cellNumber/4)) {
-                    flag = 1
-                    null
-                } else {
-                    flag = 0
-                    "To many mines"
+                if (mines.text.isEmpty()){
+                    setErrorListener(mines)
+                }else {
+                    mines.error = if (mines.text.toString().toInt() < (cellNumber / 4)) {
+                        flag = 1
+                        null
+                    } else {
+                        flag = 0
+                        "To many mines"
+                    }
                 }
             }
         })
